@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Education & Learning Community</title>
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0b0e14;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 12px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 440px;
+            background-color: #121821;
+            border-radius: 24px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.7);
+            border: 1px solid #212836;
+        }
+
+        /* Verified Education Badge */
+        .verified-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            color: #38bdf8;
+            background: rgba(56, 189, 248, 0.1);
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(56, 189, 248, 0.25);
+            font-weight: 600;
+        }
+
+        /* Round Logo */
+        .logo-container {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            border: 3px solid #eab308;
+            object-fit: cover;
+            background-color: #ffffff;
+        }
+
+        .brand-name {
+            font-size: 22px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: 0.5px;
+        }
+
+        .brand-sub {
+            font-size: 11px;
+            color: #94a3b8;
+            letter-spacing: 1.5px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        /* Main Headline */
+        .main-heading {
+            color: #f97316;
+            font-size: 24px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            line-height: 1.3;
+        }
+
+        .sub-heading {
+            color: #cbd5e1;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 25px;
+        }
+
+        /* Main Telegram CTA Button */
+        .cta-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #0088cc 0%, #006699 100%);
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 16px 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(0, 136, 204, 0.35);
+            margin-bottom: 10px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            cursor: pointer;
+        }
+
+        .cta-button:active {
+            transform: scale(0.98);
+        }
+
+        .btn-subtext {
+            font-size: 11px;
+            color: #eab308;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        /* Section Title */
+        .section-title {
+            color: #ffffff;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        /* Feature / Learning Cards */
+        .learning-card {
+            background-color: #1a2230;
+            border-radius: 12px;
+            padding: 14px 16px;
+            text-align: left;
+            margin-bottom: 12px;
+            border-left: 4px solid #10b981;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+        }
+
+        .learning-title {
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            margin-bottom: 3px;
+        }
+
+        .learning-desc {
+            color: #94a3b8;
+            font-size: 12px;
+        }
+
+        /* Bottom Action Button */
+        .start-btn {
+            display: block;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 25px 0 20px 0;
+            box-shadow: 0 5px 15px rgba(16, 185, 129, 0.3);
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        /* Disclaimer Section */
+        .disclaimer {
+            font-size: 10px;
+            color: #64748b;
+            line-height: 1.5;
+            text-align: left;
+            border-top: 1px solid #212836;
+            padding-top: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-agency {
+            font-size: 11px;
+            color: #94a3b8;
+            margin-top: 15px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Verified Educational Badge -->
+        <div class="verified-badge">
+            <i class="fa-solid fa-shield-halved"></i> 100% Free Educational Community
+        </div>
+
+        <!-- Logo & Brand Header -->
+        <div class="logo-container">
+            <img src="https://rinkumunaafusa.space/wp-content/uploads/2026/10/images-15.jpg" alt="Munaaf Trader Logo" class="logo">
+        </div>
+        <div class="brand-name">Munaaf Trader</div>
+        <div class="brand-sub">LEARNING COMMUNITY</div>
+
+        <!-- Main Headings -->
+        <h1 class="main-heading">Learn Trading Step By Step</h1>
+        <div class="sub-heading">
+            Simple educational lessons, chart analysis & live market guidance.
+        </div>
+
+        <!-- Primary Telegram Button with Click Validation -->
+        <a href="https://t.me/+KHHGip-Db0MxODhl" class="cta-button secure-link" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-telegram fa-lg"></i> Join Free Telegram Channel
+        </a>
+        <div class="btn-subtext">?? Click 'Request to Join' on Telegram ??</div>
+
+        <!-- What You Will Learn Section -->
+        <div class="section-title">What You Will Learn</div>
+
+        <div class="learning-card" style="border-left-color: #10b981;">
+            <div class="learning-title">Stock Market Fundamentals</div>
+            <div class="learning-desc">Share market basics to advanced concepts step by step.</div>
+        </div>
+
+        <div class="learning-card" style="border-left-color: #f59e0b;">
+            <div class="learning-title">Chart Reading & Technical Analysis</div>
+            <div class="learning-desc">Understand patterns, indicators, and price action.</div>
+        </div>
+
+        <div class="learning-card" style="border-left-color: #ef4444;">
+            <div class="learning-title">Risk Management & Psychology</div>
+            <div class="learning-desc">Protect your capital and master trading discipline.</div>
+        </div>
+
+        <div class="learning-card" style="border-left-color: #3b82f6;">
+            <div class="learning-title">Daily Market Updates</div>
+            <div class="learning-desc">Real-time learning posts and daily stock updates.</div>
+        </div>
+
+        <!-- Secondary CTA Button -->
+        <a href="https://t.me/+KHHGip-Db0MxODhl" class="start-btn secure-link" target="_blank" rel="noopener noreferrer">
+            Start Learning Today
+        </a>
+
+        <!-- Disclaimer -->
+        <div class="disclaimer">
+            <b>Disclaimer:</b> This page and channel are strictly for educational purposes only. We are not SEBI-registered advisors. Trading and investing in stock markets involve market risks. Past performance does not guarantee future returns. We do not provide financial recommendations or guarantee profit returns.
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-agency">
+            Educational Platform © 2026
+        </div>
+    </div>
+
+    <!-- Bot Click Verification Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let lastClick = 0;
+            const links = document.querySelectorAll('.secure-link');
+
+            links.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    const now = new Date().getTime();
+                    // Prevent rapid multiple clicks within 1.5 seconds (bot clicks & accidental double taps)
+                    if (now - lastClick < 1500) {
+                        e.preventDefault();
+                        return false;
+                    }
+                    lastClick = now;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
